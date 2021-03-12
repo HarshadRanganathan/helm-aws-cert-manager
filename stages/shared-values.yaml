@@ -1,0 +1,12 @@
+global:
+  leaderElection:
+    namespace: "cert-manager"
+serviceAccount:
+  create: false
+  name: "cert-manager"
+prometheus:
+  enabled: false
+clusterIssuer:
+  email: # add your email here to get notified on certificate expiry
+securityContext:
+  fsGroup: 1001
