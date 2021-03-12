@@ -1,0 +1,10 @@
+clusterIssuer:
+  route53:
+    domainName: # add your domain here
+    region: us-east-1
+    hostedZoneId: # add your Route53 hostedZoneId
+# Add Nameservers list from Route53 hosted zone NS record
+# This is required in addition to your hostedZoneId when you are using split view DNS (private and public Route53 hosted zones for same domain)
+extraArgs:
+  - --dns01-recursive-nameservers-only 
+  - --dns01-recursive-nameservers= # comma separated list of NS records e.g. ns.awsdns.com.:53
