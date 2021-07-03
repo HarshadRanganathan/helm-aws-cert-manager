@@ -63,6 +63,14 @@ metadata:
 EOF
 ```
 
+### Config Updates
+
+In `shared-values.yaml` file available inside `stages` folder, add values for below settings:
+
+|||
+|--|--|
+|clusterIssuer.email |Email address for getting notified about certificate expiry |
+
 ## Install/Upgrade Chart
 
 Run below commands to install/upgrade the cert manager charts.
