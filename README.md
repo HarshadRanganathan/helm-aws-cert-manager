@@ -2,6 +2,26 @@
 
 Example Helm chart for setting up Cert Manager in your EKS cluster
 
+## Cluster Issuers
+
+This chart install two cluster issuers:
+
+[1] letsencrypt-prod cluster issuer - https://cert-manager.io/docs/configuration/acme/
+
+[2] selfsigned cluster issuer - https://cert-manager.io/docs/configuration/selfsigned/
+
+Table of Contents
+=================
+
+   * [helm-cert-manager](#helm-cert-manager)
+      * [Pre-requisites](#pre-requisites)
+         * [Namespace](#namespace)
+         * [IAM](#iam)
+         * [Service Account](#service-account)
+         * [Config Updates](#config-updates)
+      * [Install CRD](#install-crd)
+      * [Install/Upgrade Chart](#installupgrade-chart)
+
 ## Pre-requisites
 
 ### Namespace
