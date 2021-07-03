@@ -56,9 +56,9 @@ kubectl apply -f - <<EOF
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: aws-load-balancer-controller
-  namespace: platform
+  name: cert-manager
+  namespace: cert-manager
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::<AWS_ACCOUNT_ID>:role/aws-load-balancer-controller-rol
+    eks.amazonaws.com/role-arn: arn:aws:iam::<AWS_ACCOUNT_ID>:role/aws-cert-manager-rol
 EOF
 ```
