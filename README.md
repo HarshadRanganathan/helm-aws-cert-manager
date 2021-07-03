@@ -62,3 +62,11 @@ metadata:
     eks.amazonaws.com/role-arn: arn:aws:iam::<AWS_ACCOUNT_ID>:role/aws-cert-manager-rol
 EOF
 ```
+
+## Install/Upgrade Chart
+
+Run below commands to install/upgrade the cert manager charts.
+
+```bash
+helm upgrade -i cert-manager . -n cert-manager --values=stages/shared-values.yaml --values=stages/prod/prod-values.yaml
+```
