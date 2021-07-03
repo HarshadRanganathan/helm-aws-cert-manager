@@ -101,15 +101,6 @@ In `shared-values.yaml` file available inside `stages` folder, add values for be
 |clusterIssuer.email |Email address for getting notified about certificate expiry |
 
 
-## Install CRD
-
-Run below command to install the CRD:
-
-```bash
-kubectl apply -f crds/cert-manager.crds.yaml
-```
-
-
 ## Install/Upgrade Chart
 
 Run below commands to install/upgrade the cert manager charts.
