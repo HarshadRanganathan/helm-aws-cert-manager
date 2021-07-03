@@ -65,6 +65,15 @@ EOF
 
 ### Config Updates
 
+In `prod-values.yaml` file available inside `stages/prod` folder, add values for below settings:
+
+|||
+|--|--|
+|clusterIssuer.route53.domainName |Add your Route53 hosted zone domain name |
+|clusterIssuer.route53.hostedZoneId |Add your Route53 public zone id |
+|--dns01-recursive-nameservers |If you are using split view DNS approach i.e. two hosted zones (public and private) with same domain name then you need specify the nameservers of your public hosted zone so that the DNS challenge is verified in the correct hosted zone  |
+
+
 In `shared-values.yaml` file available inside `stages` folder, add values for below settings:
 
 |||
